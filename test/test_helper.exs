@@ -1,0 +1,2 @@
+DynamoDemo.start
+ExUnit.start
