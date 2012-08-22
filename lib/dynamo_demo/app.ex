@@ -7,8 +7,7 @@ defmodule DynamoDemo.App do
   end
 
   get "/version" do
-    version = Keyword.get DynamoDemo.Mixfile.project, :version
-    conn.resp 200, version
+    conn.resp 200, DynamoDemo.version
   end
 
   get "/hello" do
