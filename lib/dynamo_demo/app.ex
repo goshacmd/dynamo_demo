@@ -23,4 +23,8 @@ defmodule DynamoDemo.App do
   get "/hello/:name" do
     conn.resp 200, "{\"hello\":\"#{name}\"}\n"
   end
+
+  get "/restricted" do
+    conn.resp 451, "Unavailable For Legal Reasons"
+  end
 end
