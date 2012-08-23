@@ -4,10 +4,12 @@ A simple [dynamo](https://github.com/josevalim/dynamo) application.
 
 It is an example of simple Dynamo application, which:
 
+* handles GET requests
 * uses callbacks
 * sets custom headers
 * uses parametrized routes
 * sets custom status code
+* sends files
 
 ## API
 
@@ -21,6 +23,10 @@ Responds with blank JSON object.
 
 Responds with JSON object containing `version` key with value of
 `DynamoDemo.version`.
+
+### GET /readme
+
+Responds with plain text contents of this README.md file.
 
 ### GET /hello
 

@@ -16,6 +16,11 @@ defmodule DynamoDemo.App do
     conn.resp 200, "{\"version\":\"#{DynamoDemo.version}\"}\n"
   end
 
+  get "/readme" do
+    conn = conn.set_resp_header "Content-Type", "text/plain"
+    conn.sendfile "README.md"
+  end
+
   get "/hello" do
     conn.resp 200, "{\"hello\":\"world\"}\n"
   end
