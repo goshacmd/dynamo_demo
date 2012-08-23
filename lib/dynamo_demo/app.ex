@@ -3,14 +3,14 @@ defmodule DynamoDemo.App do
   use Dynamo.App
 
   get "/" do
-    conn.resp 200, "-----> It works."
+    conn.resp 200, "-----> It works.\n"
   end
 
   get "/version" do
-    conn.resp 200, DynamoDemo.version
+    conn.resp 200, "#{DynamoDemo.version}\n"
   end
 
   get "/hello" do
-    conn.resp 200, "Hello World!"
+    conn.resp 200, "Hello World!\n"
   end
 end
