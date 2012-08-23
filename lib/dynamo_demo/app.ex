@@ -17,6 +17,10 @@ defmodule DynamoDemo.App do
   end
 
   get "/hello" do
-    conn.resp 200, "{}\n"
+    conn.resp 200, "{\"hello\":\"world\"}\n"
+  end
+
+  get "/hello/:name" do
+    conn.resp 200, "{\"hello\":\"#{name}\"}\n"
   end
 end
