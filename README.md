@@ -38,3 +38,7 @@ Responds with status code **451 Unavailable For Legal Reasons**.
 
 This example app is also [deployed to
 Heroku](http://dynamo-demo.herokuapp.com/).
+
+## License
+
+Released under the MIT license.
