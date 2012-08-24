@@ -9,15 +9,11 @@ defmodule DynamoDemo.App do
   end
 
   get "/" do
-    conn.resp 200, "{}\n"
-  end
-
-  match "/", via: :head do
-    conn.send 200, ""
+    conn.resp 200, JSON.generate []
   end
 
   get "/version" do
-    conn.resp 200, "{\"version\":\"#{DynamoDemo.version}\"}\n"
+    conn.resp 200, JSON.generate [version: DynamoDemo.version]
   end
 
   get "/readme" do
@@ -26,11 +22,11 @@ defmodule DynamoDemo.App do
   end
 
   get "/hello" do
-    conn.resp 200, "{\"hello\":\"world\"}\n"
+    conn.resp 200, JSON.generate [hello: "world"]
   end
 
   get "/hello/:name" do
-    conn.resp 200, "{\"hello\":\"#{name}\"}\n"
+    conn.resp 200, JSON.generate [hello: name]
   end
 
   get "/restricted" do

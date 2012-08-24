@@ -16,6 +16,7 @@ defmodule DynamoDemo.Mixfile do
   # { :foobar, "0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
     [ { :dynamo, git: "https://github.com/josevalim/dynamo.git" },
-      { :cowboy, git: "https://github.com/josevalim/cowboy.git" } ]
+      { :cowboy, git: "https://github.com/josevalim/cowboy.git" },
+      { :exjson, git: "https://github.com/guedes/exjson.git" } ]
   end
 end

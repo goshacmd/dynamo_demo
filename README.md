@@ -10,6 +10,7 @@ It is an example of simple Dynamo application, which:
 * uses parametrized routes
 * sets custom status code
 * sends files
+* generates JSON using [exjson](https://github.com/guedes/exjson)
 
 ## Live app
 
