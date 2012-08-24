@@ -12,6 +12,10 @@ defmodule DynamoDemo.App do
     conn.resp 200, "{}\n"
   end
 
+  match "/", via: :head do
+    conn.send 200, ""
+  end
+
   get "/version" do
     conn.resp 200, "{\"version\":\"#{DynamoDemo.version}\"}\n"
   end
