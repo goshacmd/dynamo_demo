@@ -20,9 +20,9 @@ Heroku](http://dynamo-demo.herokuapp.com/).
 
 1. Get [Elixir](http://elixir-lang.org). Beware that Dynamo depends on
    currently unstable Elixir 0.7.0.dev. If you're on Mac and are using
-   Homebrew to manage packages, install the most recent Elixir:
+   Homebrew to manage packages, install the most recent Elixir with:
 
-   `$ brew install https://raw.github.com/gist/3443774/bef740467d6811dd5e0693fdf666ed8cb48b63c6/elixir.rb --HEAD`
+   `$ brew install erlang && brew install https://raw.github.com/gist/3443774/bef740467d6811dd5e0693fdf666ed8cb48b63c6/elixir.rb --HEAD`
 
 2. Clone this repo:
 
