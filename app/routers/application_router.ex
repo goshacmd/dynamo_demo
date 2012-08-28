@@ -1,6 +1,5 @@
-defmodule DynamoDemo.App do
+defmodule ApplicationRouter do
   use Dynamo.Router
-  use Dynamo.App
 
   # Example of `prepare/1` callback.
   prepare do

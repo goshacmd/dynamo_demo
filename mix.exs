@@ -4,6 +4,7 @@ defmodule DynamoDemo.Mixfile do
   def project do
     [ app: :dynamo_demo,
       version: "0.0.1",
+      compilers: [:elixir, :dynamo, :app],
       deps: deps ]
   end
 
@@ -12,11 +13,10 @@ defmodule DynamoDemo.Mixfile do
     []
   end
 
-  # Returns the list of dependencies in the format:
-  # { :foobar, "0.1", git: "https://github.com/elixir-lang/foobar.git" }
   defp deps do
-    [ { :dynamo, git: "https://github.com/josevalim/dynamo.git" },
-      { :cowboy, git: "https://github.com/josevalim/cowboy.git" },
+    [ { :mimetypes, git: "https://github.com/spawngrid/mimetypes.git" },
+      { :cowboy, "0.6.1", git: "https://github.com/josevalim/cowboy.git" },
+      { :dynamo, "0.1.0.dev", git: "https://github.com/josevalim/dynamo.git" },
       { :exjson, git: "https://github.com/guedes/exjson.git" } ]
   end
 end

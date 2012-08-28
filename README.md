@@ -11,6 +11,7 @@ It is an example of simple Dynamo application, which:
 * sets custom status code
 * sends files
 * generates JSON using [exjson](https://github.com/guedes/exjson)
+* serves content from the "public" directory at `/public`
 
 ## Live app
 

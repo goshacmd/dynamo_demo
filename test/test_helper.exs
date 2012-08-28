@@ -1,2 +1,0 @@
-DynamoDemo.start
-ExUnit.start

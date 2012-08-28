@@ -1,1 +1,1 @@
-web: elixir --no-halt -S mix run "DynamoDemo.start"
+web: mix server -p=$PORT
