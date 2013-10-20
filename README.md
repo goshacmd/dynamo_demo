@@ -1,6 +1,6 @@
 # DynamoDemo
 
-A simple [dynamo](https://github.com/josevalim/dynamo) application.
+A simple [dynamo](https://github.com/elixir-lang/dynamo) application.
 
 It is an example of simple Dynamo application, which:
 
